@@ -36,3 +36,4 @@ c:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\refint\M
 c:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\Monogametdawda.pdb
 C:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\Monogametdawda.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\ref\Monogametdawda.dll
+C:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\Monogametdawda.sourcelink.json
