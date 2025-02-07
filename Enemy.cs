@@ -13,6 +13,9 @@ namespace Monogametdawda
     {
         private Texture2D texture;
         private Microsoft.Xna.Framework.Vector2 position;
+        public Microsoft.Xna.Framework.Vector2 Position{
+            get{return position;}
+        }
         private Microsoft.Xna.Framework.Rectangle hitbox;
         private float speed;
         public Microsoft.Xna.Framework.Rectangle Hitbox{
@@ -38,6 +41,7 @@ namespace Monogametdawda
         public void Draw(SpriteBatch spriteBatch){
             spriteBatch.Draw(texture, hitbox, Microsoft.Xna.Framework.Color.Red);
         }
+
     }
 }
 

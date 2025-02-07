@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -13,6 +14,7 @@ public class Game1 : Game
     private Player player;
     private Texture2D spaceShip;
     private List<Enemy> enemies = new List<Enemy>();
+    private int hp = 3;
 
     public Game1()
     {
@@ -48,6 +50,7 @@ public class Game1 : Game
             enemy.Update();
         }
         EnemyBulletCollision();
+        Enemykill();  
         SpawnEnemy();
         base.Update(gameTime);
     }
@@ -85,5 +88,18 @@ public class Game1 : Game
                 }
             }
         }
+    }
+    private void Enemykill(){
+        
+       for(int i = 0; i < enemies.Count; i++){
+            if(enemies[i].Hitbox.Intersects(player.Hitbox)){
+                hp--;
+                enemies.RemoveAt(i);
+                i--;
+                if(hp < 0){
+                    Exit();
+                }
+            }
+       }
     }
 }

@@ -11,8 +11,11 @@ namespace Monogametdawda
         private Texture2D texture;
         private Vector2 position;
         private Rectangle hitbox;
+        public Rectangle Hitbox{
+            get{return hitbox;}
+        }
         private KeyboardState newKState;
-        private KeyboardState oldKddState;
+        private KeyboardState oldKState;
         private List<Bullet> bullets = new List<Bullet>();
 
         public List<Bullet> Bullets{
