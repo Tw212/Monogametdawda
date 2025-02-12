@@ -5,8 +5,10 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/Admin/Documents/GitHub/Monogametdawda/Content/almir-sharifullin-front.jpg</File>
+    <File>C:/Users/Admin/Documents/GitHub/Monogametdawda/Content/azucena-lopez-robot02-movemment.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

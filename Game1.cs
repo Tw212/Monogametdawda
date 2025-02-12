@@ -13,6 +13,8 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private Player player;
     private Texture2D spaceShip;
+    private Texture2D enemy2Texture;
+    private List<Enemy2> enemies2 = new List<Enemy2>();
     private List<Enemy> enemies = new List<Enemy>();
     private int hp = 3;
 
@@ -35,6 +37,7 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         spaceShip = Content.Load<Texture2D>("almir-sharifullin-front");
+        enemy2Texture = Content.Load<Texture2D>("azucena-lopez-robot02-movemment");
         player = new Player(spaceShip, new Vector2(380,350), 50);
         // TODO: use this.Content to load your game content here
     }
@@ -53,6 +56,7 @@ public class Game1 : Game
         Enemykill();  
         SpawnEnemy();
         base.Update(gameTime);
+        EnemyEnemyCollision();a
     }
 
     protected override void Draw(GameTime gameTime)
@@ -101,5 +105,17 @@ public class Game1 : Game
                 }
             }
        }
+    }
+    private void EnemyEnemyCollision(){
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            for (int j = 0; j < enemies2.Count; j++)
+            {
+                if(enemies[i].Hitbox.Intersects(enemies2[j].Hitbox)){
+                    enemies.RemoveAt(i);
+                    enemies2.RemoveAt(j);
+                }
+            }
+        }
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Admin/Documents/GitHub/Monogametdawda/Content/almir-sharifullin-front.jpg</SourceFile>
-  <SourceTime>2025-02-12T09:26:42.9183162+01:00</SourceTime>
-  <DestFile>C:/Users/Admin/Documents/GitHub/Monogametdawda/Content/bin/Windows/Content/almir-sharifullin-front.xnb</DestFile>
-  <DestTime>2025-02-12T09:39:26.4174918+01:00</DestTime>
+  <SourceFile>C:/Users/Admin/Documents/GitHub/Monogametdawda/Content/azucena-lopez-robot02-movemment.jpg</SourceFile>
+  <SourceTime>2025-02-12T09:27:40.5352023+01:00</SourceTime>
+  <DestFile>C:/Users/Admin/Documents/GitHub/Monogametdawda/Content/bin/Windows/Content/azucena-lopez-robot02-movemment.xnb</DestFile>
+  <DestTime>2025-02-12T09:57:05.0547182+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

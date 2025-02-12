@@ -37,3 +37,4 @@ c:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\Monogame
 C:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\Monogametdawda.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\ref\Monogametdawda.dll
 C:\Users\Admin\Documents\GitHub\Monogametdawda\obj\Debug\net6.0-windows\Monogametdawda.sourcelink.json
+c:\Users\Admin\Documents\GitHub\Monogametdawda\bin\Debug\net6.0-windows\Content\azucena-lopez-robot02-movemment.xnb
