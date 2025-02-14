@@ -36,10 +36,10 @@ namespace Monogametdawda
             position.Y += speed*1f/60f;
 
             hitbox.Location = position.ToPoint();
-        }
+        } 
 
         public void Draw(SpriteBatch spriteBatch){
-            spriteBatch.Draw(texture, hitbox, Microsoft.Xna.Framework.Color.Red);
+            spriteBatch.Draw(texture, hitbox, Microsoft.Xna.Framework.Color.White);
         }
 
     }

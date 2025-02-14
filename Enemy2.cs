@@ -35,7 +35,7 @@ namespace Monogametdawda
         }
 
         public void Draw(SpriteBatch spriteBatch){
-            spriteBatch.Draw(texture, hitbox, Microsoft.Xna.Framework.Color.Red);
+            spriteBatch.Draw(texture, hitbox, Microsoft.Xna.Framework.Color.White);
         }
 
     }
