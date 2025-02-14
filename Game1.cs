@@ -52,20 +52,28 @@ public class Game1 : Game
         foreach(Enemy enemy in enemies){
             enemy.Update();
         }
+        foreach(Enemy2 enemy2 in enemies2){
+            enemy2.Update();
+        }
         EnemyBulletCollision();
         Enemykill();  
         SpawnEnemy();
+        SpawnEnemy2(); 
         base.Update(gameTime);
-        EnemyEnemyCollision();a
+        EnemyEnemyCollision();
+
     }
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.CornflowerBlue);
+        GraphicsDevice.Clear(Color.White );
         _spriteBatch.Begin();
           player.Draw(_spriteBatch);
         foreach(Enemy enemy in enemies){
             enemy.Draw(_spriteBatch);
+        }
+        foreach(Enemy2 enemy2 in enemies2){ 
+            enemy2.Draw(_spriteBatch);
         }
         player.Draw(_spriteBatch);
         _spriteBatch.End();
@@ -76,9 +84,17 @@ public class Game1 : Game
      private void SpawnEnemy(){
         Random rand = new Random();
         int value = rand.Next(1, 101);
-        int spawnChancePercent = 5;
+        int spawnChancePercent = 2;
         if(value<=spawnChancePercent){
             enemies.Add(new Enemy(spaceShip));   
+        }
+    }
+    private void SpawnEnemy2(){
+        Random rand = new Random();
+        int value = rand.Next(1, 101);
+        int spawnChancePercent = 1;
+         if(value<=spawnChancePercent){
+            enemies2.Add(new Enemy2(enemy2Texture));   
         }
     }
     private void EnemyBulletCollision(){

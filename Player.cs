@@ -31,6 +31,7 @@ namespace Monogametdawda
             newKState = Keyboard.GetState();
             Move();
             Shoot();
+            oldKState = newKState; 
 
             foreach (Bullet b in bullets)
             {
@@ -64,7 +65,7 @@ namespace Monogametdawda
         }
 
         public void Draw(SpriteBatch spriteBatch){
-            spriteBatch.Draw(texture,hitbox,Color.Green);
+            spriteBatch.Draw(texture,hitbox,Color.White);
             foreach(Bullet b in bullets){
                 b.Draw(spriteBatch);
             }
